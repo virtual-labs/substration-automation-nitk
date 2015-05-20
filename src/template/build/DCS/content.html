@@ -1,0 +1,658 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title></title>
+ 
+
+	<style type="text/css">
+#wrap {
+    width:85%;
+}
+
+
+</style>
+
+</head>
+
+<body>
+  
+ <div id="experiment">
+  
+  
+     <header class="default" id="experiment-header">
+   
+         <div class="logo" id="experiment-header-logo">
+  
+  
+         <img src="../images/logo.jpg"></div>
+
+ 
+
+           <div class="heading" id="experiment-header-heading">
+       
+ 
+     
+          <a href="../index.html">Electrical Lab</a>
+      
+      </div>
+   
+    </header> 
+     <article id="experiment-article">
+      
+
+         <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
+
+    
+        <header class="heading" id="experiment-article-heading">
+           
+      DCS (Yokogawa CENTUM CS 1000)
+          </header>  
+         <nav class="default" id="experiment-article-navigation">
+   
+             <ul id="experiment-article-navigation-menu">
+            
+ 
+             </ul>
+         
+   </nav>
+<div id="experiment-article-sections">
+			
+   
+ <section id="experiment-article-section-1">
+              
+      <div class="icon" id="experiment-article-section-1-icon">
+            
+             
+    <img src="../images/theory.jpg"></div>
+
+                   
+ <div class="heading" id=
+"experiment-article-section-1-heading">
+      
+ 
+                 Theory
+          
+          </div>
+
+         
+           <div class="content" id=
+"experiment-article-section-1-content">
+        
+                <div class="divContent"  id="wrap">
+          
+                 
+
+ <p class="MsoNormal" style="line-height: 150%;">
+      
+  
+ <font size="5">
+<underline><center>
+<b>
+<u>Distributed Control System (DCS)</u></b>
+</center></underline>
+</font>
+
+<p>
+<font size="4">
+<b>CONTENTS:</b></font><br>
+<ol type="1">
+<li>Introduction</li>
+<li>Architecture</li>
+<li>CPU</li>
+<li> Analog Input Module</li>
+<li> Digital Input Module</li>
+<li> Analog Output Module</li>
+<li> Digital Output Module</li>
+<li> Communication System</li>
+<li> Human Interface system (HIS)</li>
+<li> Applications</li>
+</ol>
+</p>
+
+
+<font size="4">
+<b>Introduction:</b></font><br>
+<p>A distributed control system (DCS) refers to a control system usually of a manufacturing system, process or any kind of dynamic system, in which the controller elements are not central in location (like the brain) but are distributed throughout the system with each component sub-system controlled by one or more controllers. The entire system of controllers is connected by networks for communication and monitoring. DCS is a very broad term used in a variety of industries, to monitor and control distributed equipment.<br>
+A DCS typically uses custom designed processors as controllers and uses both proprietary interconnections and communications protocol for communication. Input and output modules form component parts of the DCS. The processor receives information from input modules and sends information to output modules. The input modules receive information from input instruments in the process (or field) and transmit instructions to the output instruments in the field. Computer buses or electrical buses connect the processor and modules through multiplexer or demultiplexers. Buses also connect the distributed controllers with the central controller and finally to the Human–machine interface (HMI) or control consoles.<br>
+CENTUM is the generic name of Yokogawa’s distributed control systems (referred to as “DCS” ) for small- and medium-scale plants (CENTUM CS 1000), and for large scale plants (CENTUM CS 3000).</p>
+
+<font size="4">
+<b>Architecture:</b></font><br>
+<p>The hardware architecture of CENTUM CS 1000 has been shown below in given figure. The description of CENTUM CS 1000 has been given after subdividing it in some smaller areas as CPU, Battery Units, Power supply units, I/O Modules, communication cards, Human interface system (HIS).</p>
+<center>
+<img src="../images/DCST/1.jpg" height=450 width=500></img>
+</center>
+
+<font size="4">
+<b>CPU:</b></font><br>
+<center>
+<img src="../images/DCST/2.jpg" height=400 width=500></img>
+<center><b>INTERNAL BLOCK DIAGRAM OF CPU CARD</b></center>
+</center>
+<p>There are two models of CPU card: The CP701 for basic systems and CP 703 for enhanced systems. The basic system model has 8 MB of memory, while the enhanced system model has 16 MB. The model chosen depends on the type of system software used. The main memory is ensured of high reliability by error correction code (ECC).<br>
+The redundancy architecture of the CPU is referred to as a synchronous hot standby system, which is the fundamentally the same as that of the CENTUM CS, the only difference being the addition of the new error detection and protection functions. These functions set write protected areas in each CPU card to protect the program and database areas against illegal address writing instruction from the other CPU card, and thereby prevents both card from failing due to illegal accesses caused by malfunctions in MPU. Other newly added functions include the memory management unit (MMU) and write protection which ensure data integrity, the parity check of addresses and data, the ECC memory, and a two wire signal self checker.</p>
+
+<font size="3">
+<b>Power Supply Card:</b></font>
+<p>
+The power supply card is designed to supply power to the common nests, such as the CPU cards, and up to five I/O module nests. Standardizing the output voltages to +5 V DC has simplified the circuit and structure and reduced the number of parts. This allowed a power-factor Improvement unit to be built in so as to comply with the aforementioned EN61000-3-2, class A standard (relating to power line harmonics). The +5V DC outputs from the two power supply cards pass through diodes so that they can be coupled externally for redundancy purposes.<br>
+The input-voltage monitoring signal (AC ready) and output-voltage monitoring signal (DC ready) together with the guaranteed retention time of the +5V DC output, enable to control to continue over a temporary power failure. The output voltage retention time immediately after a power failure is clearly defined in the specifications since it is closely related to the software saving process in the CPU card.</p>
+
+<font size="3">
+<b>Nest Configuration:</b></font>
+<p>The FCS nest is composed of VL Net couplers, battery units for backing up the CPUs’ main memory, a backboard, a power distribution board, and a ready signal output unit in addition to the CPU cards and power supply card. A FCS model has five I/O modules nest.<br>
+<center>
+<img src="../images/DCST/3.jpg" height=250 width=200></img>
+<center><b>Figure Nest Configuration</b></center>
+</center>
+</p>
+
+<font size="3">
+<b>Power Supply Card:</b></font>
+<p>The I/O modules convert the analog or digital signals from the field equipment then pass to field control stations or vice versa to convert the signals from the field control station to the signals for the field equipment. The I/O module can be categorized into the following seven main types-
+<ul type="disc">
+<li>Analog I/O module</li>
+<li>Multipoint control analog I/O module</li>
+<li>Relay I/O module</li>
+<li> Multiplexer module</li>
+<li>Digital I/O module</li>
+<li>Communication module</li>
+<li>Communication card</li>
+</ul>
+</p>
+
+<font size="4">
+<b>Analog Input Module:</b></font><br><br>
+List of I/O Modules Installable in Analog I/O Module Nest:<br>
+<center>
+<img src="../images/DCST/4.jpg" height=250 width=500></img>
+</center><br>
+
+<b>Wiring of Analog I/O Module:</b>
+<br>
+Models AAM10, AAM11, AAM11B, AAM21, AAM21J, APM11, AAM50, AAM51<br>
+
+<center>
+<img src="../images/DCST/5.jpg" height=400 width=550></img>
+</center><br>
+<p>If output signal between 1 - 5V DC needs to be output to a recorder, etc., connect the Model AKB301 cable to the (CN1) connector. For example, to output signal from the terminal block TE16 to the recorder, connect cable Model AKB301 between CN1 and the terminal block.</p>
+
+<font size="4">
+<b>Digital I/O Module:</b></font>
+<p>The digital I/O module is configured by the card unit and either the terminal unit or connector unit. It inputs and outputs 16 or 32 signal points and converts signals. Since the types or I/O signals are software-set, no control switch or knob is found on this module.<br>
+The table below shows the types of digital I/O modules.</p>
+<center><img src="../images/DCST/6.jpg" height=500 width=500></img>
+</center><br>
+
+<font size="3">
+<b>Wiring of Digital I/O Module (Connector Type):</b></font>
+<p>Digital I/O module (connector type)<br>
+Models ADM11C, ADM12C, ADM51C, ADM52C<br>
+<center><img src="../images/DCST/7.jpg" height=400 width=500></img>
+<center><b>Figure Wiring of Digital I/O Module(connector type)</b></center>
+</center></p>
+
+<font size="4">
+<b>Communication Cards:</b></font>
+<p>The communication cards are used to realize the general-purpose communication of field control station and subsystems via serial links, so that the subsystem may be controlled or monitored.<br>
+<center><img src="../images/DCST/8.jpg" height=400 width=500></img>
+</center><br>
+Different from the above mentioned cards, the communication package with subsystems is prepared for ACM21 and ACM22 so that the general-purpose communication may be conveniently realized. The ACM71 Ethernet communication module receives/sends data from/to subsystems such as MELSEC via Ethernet.</p>
+<b>Communication card models:</b>
+<ul type="disc">
+<li><b>ACM21</b>: RS-232C communication card</li>
+<li><b>ACM22</b>: RS-422/RS-485 communication card</li>
+<li><b>ACM71</b>: Ethernet communication module</li>
+</ul>
+
+<font size="4">
+<b>HIS Operation And Monitoring Windows:</b></font>
+<p>There are different operational and monitoring windows, which have to define during designing Human Interface Station (HIS).The different windows are shown below:</p>
+
+<ol type="1">
+<li><b>Basic Windows for Operation and Monitoring</b><br>
+<table border=1>
+<tr>
+<td align="left">1. System Message Window</td></tr>
+<tr>
+<td align="left">2. Navigator Window</td>
+</tr>
+</table>
+</li><br>
+
+<li><b>Windows Convenient for Operation and Monitoring</b><br>
+<table border=1>
+<tr><td align="left">1.Graphic Window</td></tr>
+<tr><td align="left">2. Trend Window</td></tr>
+<tr><td align="left">3. Tuning Window</td></tr>
+<tr><td align="left">4. Faceplate Window</td></tr>
+<tr><td align="left">5. Operator Guide Window</td></tr>
+<tr><td align="left">6. Process Alarm Window</td></tr>
+<tr><td align="left">7. Message Monitor Window</td></tr>
+<tr><td align="left">8. SFC Window</td></tr>
+<tr><td align="left">9. Logic Chart Window</td></tr>
+<tr><td align="left">10. Sequence Table Window</td></tr>
+<tr><td align="left">11. Control Drawing Window</td></tr>
+<tr><td align="left">12. Help Dialog Box</td></tr>
+</table>
+</li><br>
+
+<li><b>Windows for Batch Operation and Monitoring</b></li><br>
+
+<li><b>Windows for Process Status and Operation Record Configuration</b><br>
+<table border=1>
+<tr><td align="left">1. Process Report Window</td></tr>
+<tr><td align="left">2. Historical Message Report Window</td></tr>
+</table>
+</li><br>
+
+<li><b>Windows for System Administration</b></li>
+</ol>
+
+<font size="3">
+<b>How the HIS looks like:</b></font>
+<p>The human interface system programmed for a project/plan is designed in such a way that it would be easy for the operator to understand all the operations occurred in the plant. The example of visualization of a reactor control power plant has been given below:<br>
+
+<center><img src="../images/DCST/9.jpg" height=400 width=500></img>
+</center></p>
+
+<font size="3">
+<b>Example2:</b></font>
+<p><b>Substation Automation</b>: Visualization of typical substation comprising two incomers and four feeders.<br>
+<center><img src="../images/DCST/10.jpg" height=400 width=550></img>
+</center></p>
+
+<font size="3">
+<b>How the faceplate looks like:</b></font>
+<p>Faceplate window is a type of window, where the process variation, switch status has been displayed.<br>
+<center><img src="../images/DCST/11.jpg" height=500 width=400></img>
+</center></p>
+
+<font size="4">
+<b>Applications:</b></font>
+<p>A typical DCS consists of functionally and/or geographically distributed digital controllers capable of executing from 1 to 256 or more regulatory control loops in one control box. The input/output devices (I/O) can be integral with the controller or located remotely via a field network. Today’s controllers have extensive computational capabilities and, in addition to proportional, integral, and derivative (PID) control, can generally perform logic and sequential control. Modern DCSs also support neural networks and fuzzy application.<br>
+DCSs may employ one or more workstations and can be configured at the workstation or by an off-line personal computer. Local communication is handled by a control network with transmission over twisted pair, coaxial, or fiber optic cable. A server and/or applications processor may be included in the system for extra computational, data collection, and reporting capability.<br>
+Distributed control systems (DCSs) are dedicated systems used to control manufacturing processes that are continuous or batch-oriented, such as -</p>
+
+<ol type="1">
+<li>Electrical power grids and electrical generation plants </li>
+<li>Environmental control systems </li>
+<li>Traffic signals </li>
+<li>Radio signals</li>
+<li>Water management systems </li>
+<li> Oil refining plants</li>
+<li> Metallurgical process plants </li>
+<li> Chemical plants</li>
+<li>Pharmaceutical manufacturing</li>
+<li> Sensor networks</li>
+<li>Dry cargo and bulk oil carrier ships etc.</li>
+</ol>
+
+<font size="4">
+<b>Conclusion:</b></font>
+<p>The development of CENTUM CS 1000 was accomplished in a short period of time by using the parts and technologies field proven in CENTUM CS system wherever possible. It is a low end model in the CENTUM CS series and is acting as a key product for the global market taking over from the microXL system. The CENTUM series hardware has identical architecture for plants of all scales. The CENTUM CS 1000 has been assessed and updated so as to meet the ever increasing market needs.</p>
+             
+
+
+
+
+	</p>
+
+<br></div></div>
+                         
+
+
+</section>
+ <section id="experiment-article-section-2">
+                    
+
+<div class="icon" id="experiment-article-section-2-icon">
+                
+
+<img src="../images/procedure.jpg" style="padding-left: 20px;"></div>
+
+              
+   <div class="heading" id=
+"experiment-article-section-2-heading">
+   
+
+                     Procedure
+          
+          </div>
+
+           
+         <div class="content" id=
+"experiment-article-section-2-content">
+            
+            <div class="divContent"  id="wrap">
+                  
+        <p class="MsoNormal" style="line-height: 150%;">
+                      
+      <span lang="EN-IN" style=
+'font-size: 12pt; line-height: 150%; font-family: "Arial","sans-serif";'>
+
+
+<font size="5"><center><b><u>What do you know about DCS System?</u></b></center></font>
+
+
+<p>DCS (Distributed Control System) is a computerized control system used to control the production line in the industry.</p>
+
+<font size="4"><b>Why DCS System is required?</b></font>
+<p>While a product (Food, medicine, Oil..etc) passing through many stages in the factory before it reaches it's final so the product can be sold out, during those stages it requires a kind of control in order to adjust the quality of it. However, to adjust the quality it is required to control many physical quantities such as pressure, Temperature..etc.
+Further more, in some dangerous applications such as petrochemical factories and nuclear reactors the control will much critical, However, losing the control may lead to an explosion of the plant.</p>
+
+
+<font size="4"><b>What does DCS System consists of?</b></font>
+<p>DCS System consists minimum of the following components.
+
+<ol type="1">
+<li>Field Control station (FCS): It consists of input/output modules, CPU and communication bus.
+<li>Operator station: It is basically human interface machine with monitor, the operator man can view the process in the 
+plant and check if any alarm is presents and he can change any setting, print reports..etc.
+<li> Engineering station: It is used to configure all input & output and drawing and any things required to be monitored on 
+Operator station monitor.</li>
+</ol>
+
+<center><img src="../images/DCSP/1.jpg" height=375 width=400></img>
+<center>Fig (1): Basic configuration of a DCS System</center>
+</center>
+</p>
+
+<font size="4"><b>How does it work?</b></font>
+<p>Basically, DCS system receives input signals from other devices, these signals will be
+processed and analyzed by DCS CPU and based on the result an action will be taken.<br><br>
+
+There are many sensors and transducers inside the plant converts physical quantities such
+as pressure, temperature to an electrical quantity, these devices called Transmitters they transmit the electrical signals 
+represents physical quantities to DCS System.<br><br>
+
+There could be thousand of transmitters in a factory sending signals to DCS. The
+electrical signals could be either analog or digital, for analog signals they could be in one of the following cases.<br><br>
+
+4 to 20mA,1 to 5VDC or Resistance.<br>
+And for digital they would be either logic 0 or logic 1.<br><br>
+
+When FCS receives the analog signals from different transmitters it will convert it to digital via input module then passed to 
+CPU for processing, the CPU will compare the process measured value (PV) with value sited by the operator (SV). If the
+ both values are not matched then DCS will generate an output called Manipulated value (MV) to the field via output 
+modules in order to adjust the physical quantity by operating a valve for example.<br><br>
+
+Fig (2) shows an example of simple control mechanism. The water in the tank is required to be controlled, the level 
+transmitter will measure the water level and send PV signal (4-20mA) to DCS. Input module in the FCS will receive this 
+signal and pass it to CPU after converting it to digital signal. The PV data can be monitored on operator station screen in 
+small window called Faceplate, Fig (3) shows an example of faceplate.</p>
+
+<center><img src="../images/DCSP/2.jpg" height=275 width=550></img>
+<center>Fig (2): Example of simple control mechanism</center>
+</center>
+
+
+<p>On the faceplate the operator can see the three parameters reading SV, PV & MV at the top. The SV can be set to the
+ required level by moving the yellow pointer. DCS system will operate the pump by sending MV Signal via output module to 
+fill the tank and continue as long as PV signal received from the transmitter is less then SV, once the water level reached to 
+required level that means PV=SV the DCS will stop the pump and this happen if faceplate mode is Auto, however in
+ Manual mode, the operator can control MV directly and SV pointer will be disabled.<br><br>
+
+Also the faceplate shows the status of this control process Normal or Alarm, the alarm status will be initiated if there is any
+ problem in which PV is not able to equalize with SV.</p>
+
+<center><img src="../images/DCSP/3.jpg" height=500 width=350></img>
+<center>Fig (3): Example of a simple faceplate</center>
+</center>
+
+ </span>
+</p>
+
+ 
+  </div>
+</div>    
+                  
+</section>
+  
+
+<section id="experiment-article-section-3">
+             
+       <div class="icon" id="experiment-article-section-3-icon">
+          
+      <img src="../images/selfevaluation.jpg" style="padding-left:50px;">
+</div>
+                    
+
+           
+         <div class="heading" id= "experiment-article-section-3-heading">
+    
+                   Self Evaluation
+            
+        </div>
+
+                    
+	   <div class="content" id="experiment-article-section-3-content">
+                        <div class="divQuiz">
+                            <div id="displayQuiz">
+                                <form id="form11" method="post" name="form11">
+                              
+<p >	
+  
+   </p>    
+
+
+       
+                                </form><br>
+                            </div><br>
+                        </div>
+                    </div> 
+            </section>
+
+
+  
+<section id="experiment-article-section-4">
+  
+       <div class="icon" id="experiment-article-section-4-icon">
+         
+        <img src="../images/simulation.jpg" style="padding-left: 20px;">
+</div>
+
+              
+ <div class="heading" id=
+"experiment-article-section-4-heading">
+     
+                   Simulator
+          
+          </div>
+
+              
+      <div class="content" id="experiment-article-section-4-content">
+        
+            
+      <div class="divContent">
+                            
+
+                        </div>
+
+
+</div>
+               
+ </section>
+
+      
+
+         <section id="experiment-article-section-5">
+    
+               <div class="icon" id="experiment-article-section-5-icon">
+   
+     <img src="../images/assignment.jpg" style="padding-left: 20px;"></div>
+    
+      <div class="heading" id= "experiment-article-section-5-heading">
+      
+                  Assignment
+         
+
+           </div>
+               
+     <div class="content" id="expostperiment-article-section-5-content">
+      
+         
+
+
+
+
+
+
+   </div>
+          
+      </section>
+	
+
+
+      
+         <section id="experiment-article-section-6">
+   
+                 <div class="icon" id="experiment-article-section-6-icon">
+                               
+      <img src="../images/reference.jpg" style="padding-left: 15px;"></div>
+
+  
+                  <div class="heading" id="experiment-article-section-6-heading">
+     
+                   Reference
+          
+          </div>
+
+             
+       <div class="content" id="experiment-article-section-6-content">
+   
+
+
+
+
+
+
+
+         </div>
+
+</section>
+
+   
+
+       <section id="experiment-article-section-7">
+   
+                 <div class="icon" id="experiment-article-section-7-icon">
+ 
+       
+            <img src="../images/video.jpg"></div>
+
+    
+                <div class="heading" id="experiment-article-section-7-heading">
+  
+                      Video 
+           
+         </div>
+
+               
+     <div class="content" id="experiment-article-section-7-content">
+ 
+
+
+<iframe width="800" height="600" src="https://www.youtube.com/embed/ZuWFoKAfLUg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+       
+                
+                    </div>
+ 
+          </section>
+     
+         
+
+             
+  
+     <section id="experiment-article-section-8">
+        
+            <div class="icon" id="experiment-article-section-8-icon">
+             
+                  
+      <img src="../images/quiz.jpg"></div>
+                   
+ 
+
+                    <div class="heading" id="experiment-article-section-8-heading">
+ 
+                       Quiz 
+           
+         </div>
+
+                  
+ <div class="content" id="experiment-article-section-8-content">
+                        <div class="divQuiz">
+                            <div id="displayQuiz">
+                                <form id="form11" method="post" name="form11">
+                                   
+<p >	
+ 
+   </p>    
+      
+                                </form><br>
+                            </div><br>
+                        </div>
+                    </div> 
+  
+                </section>
+
+       
+     </div>
+     
+   </article>
+  
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+           
+
+
+
+              
+
+               
+                      
+                 
