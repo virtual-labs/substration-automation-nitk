@@ -1,0 +1,746 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title></title>
+ 
+
+	<style type="text/css">
+#wrap {
+    width:85%;
+}
+
+
+</style>
+
+</head>
+
+<body>
+  
+ <div id="experiment">
+  
+  
+     <header class="default" id="experiment-header">
+   
+         <div class="logo" id="experiment-header-logo">
+  
+  
+         <img src="../images/logo.jpg"></div>
+
+ 
+
+           <div class="heading" id="experiment-header-heading">
+       
+ 
+     
+          <a href="../index.html">Electrical Lab</a>
+      
+      </div>
+   
+    </header> 
+     <article id="experiment-article">
+      
+
+         <div class="breadcrumb" id="experiment-article-breadcrumb"></div>
+
+    
+        <header class="heading" id="experiment-article-heading">
+           
+    Circuit Breaker Status Indication from field input
+  
+          </header>  
+         <nav class="default" id="experiment-article-navigation">
+   
+             <ul id="experiment-article-navigation-menu">
+            
+ 
+             </ul>
+         
+   </nav>
+<div id="experiment-article-sections">
+			
+   
+ <section id="experiment-article-section-1">
+              
+      <div class="icon" id="experiment-article-section-1-icon">
+            
+             
+    <img src="../images/theory.jpg"></div>
+
+                   
+ <div class="heading" id=
+"experiment-article-section-1-heading">
+      
+ 
+                 Theory
+          
+          </div>
+
+         
+           <div class="content" id=
+"experiment-article-section-1-content">
+        
+                <div class="divContent"  id="wrap">
+          
+                 
+
+ <p class="MsoNormal" style="line-height: 150%;">
+      
+    <font size="5">
+<underline><center>
+<b>
+<u>Circuit Breaker Status Indication from field input</u></b>
+</center></underline>
+</font>
+
+
+<p>
+In this experiment, we are indicating the status of the circuit breakers
+which is located in the field on a human machine interface of a
+workstation with the help of DCS. So let us see the circuit breaker and
+its working in brief:</p>
+
+
+<font size="4">
+<underline>
+<b><u>Circuit breakers</u></b>
+</underline>
+</font>
+
+<p>
+A circuit breaker is an automatically operated electrical switch designed
+for to protect an electrical circuit from damage caused by overload or
+short circuit. Or, in other words, the function of a circuit breaker is to
+isolate the faulty part of the power system in case of abnormal
+conditions. A protective relay detects abnormal conditions and sends a
+tripping signal to the circuit breaker. After receiving the trip command
+signal from the relay the circuit breaker isolates the faulty part of the
+power system.</p>
+<br>
+
+
+<center>
+<img src="../images/exp1/a.jpg" height=200 width=400></img></center>
+<center>fig(a)<br>
+Separation of the contacts of the circuit breaker</center>
+
+<br>
+A circuit breaker has two contacts- a fixed contact and a moving contact.
+Under normal conditions these two contacts remain in closed position.
+When the circuit breaker is required to isolate the faulty part, the moving
+contact moves to interrupt the circuit. On the separation of the contacts,
+the flow of current is interrupted, resulting in the formation of an arc
+between the contacts. These contacts are placed in a closed chamber
+containing some insulating medium (like gas or liquid) which extinguish
+the arc.
+<br>
+<br>
+Insulating fluid is used for arc extension and the fluid chosen depends
+upon the rating and type of circuit breaker. The insulating fluids
+commonly used for circuit breaker are:
+
+<ol type="I">
+<li>Air at atmospheric pressure</li>
+<li>Compressed air</li>
+<li>Ultra high vacuum</li>
+<li>Oil which produces hydrogen for arc extension</li>
+<li>Sulphur hexafluoride (SF<sub>6</sub> )</li>
+</ol>
+
+<p>
+Some of the gases which have been used in circuit breaker are:
+<ul>
+<li>Electromagnetic gases : Sulphur hexafluoride , arcton</li>
+<li>Simple gases: Air, oxygen, hydrogen, nitrogen and carbon dioxide.</li>
+</ul>
+<p>
+The important characteristics of the fluids used in circuit breaker are:
+<ol type=I>
+<li>It should have good thermal and chemical stability.</li>
+<li>It should have high declarative strength.</li>
+<li>Non-inflammability and high thermal conductivity.</li>
+<li>Arc extinguish ability.</li>
+</ol>
+
+
+<font size="4">
+<underline>
+<b><u>Classification of circuit breakers</u></b>
+</underline>
+</font>
+
+<ol type="1">
+<li>High voltage circuit breakers</li>
+<li>Low voltage circuit breakers</li>
+</ol>
+
+<font size="3">
+<b><u>High voltage circuit breakers</u></b>
+
+<ol type="a">
+<li>
+<font size="3">
+<underline>
+<u>Oil circuit breakers :-</u>
+</underline>
+</font>
+
+
+<ol type="I">
+<li>Bulk oil circuit breakers using a large quantity of oil.</li>
+<li>Low oil circuit breakers which operate with a minimum amount of oil.</li>
+</ol>
+
+</li>
+<li>
+<font size="3">
+<underline>
+<u>Oil less circuit breakers :-</u>
+</underline>
+</font>
+
+<ol type="I">
+<li>Hard gas circuit breakers</li>
+<li>Air blast circuit breakers</li>
+<li>Sulphur hexafluoride circuit breaker</li>
+<li>Water circuit breakers</li>
+<li>Vacuum circuit breakers</li>
+
+</ol>
+</li>
+</font>
+
+</ol>
+
+<font size="4">
+<underline>
+<b><u>Characteristics of high voltage rating circuit breaker :-</u></b>
+</underline>
+</font>
+<ol type="i">
+<li>High voltage rating circuit breaker should have high reliability electrically and mechanically.</li>
+<li>High voltage rating circuit breaker should be capable of interrupting capacitive and inductive circuits and fault currents
+of all values within their rating.</li>
+</ol>
+
+<p>
+Let us see some of the features of major circuit breakers:<br><br>
+(1) <u> OIL CIRCUIT BREAKERS (O.C.B):</u><br>
+Oil circuit breakers are the most common and oldest type of circuit
+breakers. The rating range of circuit breakers lies in range of
+25MVA at 2.5kV and 5000MVA at 250kV.
+In oil circuit breaker, the separating contacts are made to separate
+within insulating oil medium, which has better insulating properties
+than air.<br><br>
+<u>Few advantages of using oil as an Arc quenching medium:-</u>
+<ol type=a>
+<li>Dielectric strength is high</li>
+<li>As a result of decomposition of oil, it has good cooling property</li>
+<li>It acts as an insulator between live part and earth</li>
+<li>Surrounding oil in close proximity to the arc presents a large cooling surface</li>
+</ol>
+
+
+<u>Few disadvantages:-</u>
+<ol type=a>
+<li>Highly inflammable and can cause an explosion by mixing with air</li>
+<li>It requires maintenance</li>
+<li>Periodic replacement</li>
+</ol>
+
+<p>
+(2) <u>AIR BLAST CIRCUIT BREAKERS:-</u><br>
+Air blast circuit breakers is a type of circuit breaker which use a
+high pressure air blast (at a pressure of 20bar) as an arc
+quenching medium.
+Range  132kV and above up to 400kV ,with the braking capacity
+up to 7500MVA .But can also be designed to cover the wide range
+of 66kV to 132kV.<br><br>
+
+<u>Few advantages:-</u>
+<ol type=a>
+<li>No risk of explosion and fire hazards</li>
+<li>Consistent and short arc duration</li>
+<li>Since the arc duration is short and consistent, the burning of the contact is less due to less arc energy</li>
+<li>High speed enclosures facility</li>
+<li>Comparatively less maintenance required</li>
+</ol>
+
+
+<u>Few disadvantages:-</u>
+<ol type=a>
+<li>Current chopping</li>
+<li>Sensitivity to restricting voltage</li>
+</ol>
+
+<p>
+(3) <u>SULPHUR HEXAFLUORIDE(SF</u><sub>6</sub>)<u>CIRCUIT BREAKER:-</u><br>
+Sulphur hexafluoride to other medium such as oil or air for the use
+in circuit breakers for the following reasons:
+
+<ol type=1>
+<li>Being an Inert gas, it is non-reactive to the other components of circuit breakers</li>
+<li>Sulphur hexafluoride has high dielectric strength (about 24 times that of air and it is comparable to that of oil)</li>
+<li>When extinction of arc is concerned it is about 100 times more effective than air</li>
+<li>Its heat transfer property is about 16times that of air because of its high density</li>
+</ol>
+
+
+<u>Applications:-</u>
+<ol type=1>
+<li>The circuit breakers are designed for voltages 115kV to 230kV, power rating of 10MVA to 20MVA and interrupting times less
+than 3cycles.</li>
+<li>A typical sulphur hexafluoride circuit breaker consist of interrupter units, each capable of dealing with currents up to
+60000A and voltage in the range of 50 to 80kV.A number of units are connected in series according to the voltage of the
+system.</li>
+</ol>
+
+
+
+<u>Few Advantages:-</u>
+<ol type=a>
+<li>No risk of fire</li>
+<li>No reduction of dielectric strength</li>
+<li>Arcing time is very short; this reduces the erosion of contact</li>
+<li>Its operation is very silent</li>
+<li>The current chopping tendency is minimized by using sulphur hexafluoride gas at low pressure and low velocity</li>
+<li>The breaker is compact in size and totally enclosed. Thus electrical clearances are drastically reduced and are
+particularly suitable where explosion hazard exists, like coal mines</li>
+</ol>
+
+
+<u>Disadvantages:-</u>
+<ol type=a>
+<li>Expensive</li>
+<li>Sulphur hexafluoride gas has to be reconditioned after every operation of the breaker and additional equipment is required
+for this purpose</li>
+</ol>
+
+<p>
+(4) <u>VACUUM CIRCUIT BREAKERS(V.C.B):-</u><br>
+Vacuum means the pressure below atmospheric pressure which is 760 mm of Hg. In a vacuum circuit breaker, vacuum of
+the order of 10<sup>-5</sup> to 10<sup>-7</sup> (1 torr = 1 mm of Hg) is used as the arc quenching medium. The dielectric strength of the vacuum is
+1000 times more than that of any other medium.<br><br>
+
+<u>Applications:-</u>
+<ol type=1>
+<li>Vacuum breakers are being used for outdoor applications ranging from 22kV to 66kV. They are also suitable for
+majority of applications in several areas even with limited rating say 60 to 100MVA.</li>
+<li>Vacuum circuit breakers are used for capacitor-bank switching, transformer, reacting switching, where the
+voltages are high and current to be interrupted is low.</li>
+</ol>
+
+
+<p>
+<u>Few important terms regarding circuit breakers:-</u><br>
+<ol type=1>
+<li><u>Arc voltage :-</u><br>
+The voltage across the contacts during the arcing period is
+known as the arc voltage .</li><br>
+<li><u>Restriking voltage:-</u><br>
+The transient voltage appearing across the contacts during
+arc period is called the restriking voltage.</li><br>
+<li><u>Recovery voltage:-</u><br>
+It is normal frequency (50Hz) r.m.s. voltage that appears across the contact of the circuit breaker after the final
+extinction. It is approximately equal to the system voltage.</li><br>
+<li><u>Rate of Rise of restriking voltage(RRRV):-</u><br>
+The average RRRV = Peak value of restriking voltage/Time taken to reach the peak value
+
+</li><br>
+<li><u>Current Chopping:-</u><br>
+When low inductive current (e.g. current to a shunt reactor or magnetising current of a transformer) is interrupted by a
+circuit breaker and the arc quenching force of the circuit breaker is more than necessary to interrupt a low magnitude
+of current, the current will be interrupted before its manual zero instant. It is termed as current chopping.
+</li>
+</ol>
+
+<font size="4">
+<underline>
+<b><u>Rating of circuit breakers:-</u></b>
+</underline>
+</font>
+<br>
+<font size="3">
+A circuit breaker is expected to perform the following duties (besides
+normal working) under short circuit/fault conditions:<br>
+<ol type=a>
+<li>To open the contacts to clear the fault and isolating the faulty section.</li>
+<li>To close the contacts on to a fault.</li>
+<li>It must be able to carry fault current for a short time while another
+circuit breaker (in series) is clearing the fault.</li>
+</ol>
+</font>
+<p>
+Therefore, in addition to the rated voltage, current and frequency, circuit breakers have the following important ratings.
+<ol type="i">
+<li>Breaking capacity</li>
+<li>Making capacity</li>
+<li>Short-time capacity</li>
+</ol>
+
+
+<ol type="i">
+<li><u>Breaking capacity:-</u><br>
+It is the current (r.m.s. value) that a circuit breaker is capable of
+breaking under specified conditions (e.g. PPPV, power factor)
+and given recovery voltage.<br>
+
+<img src="../images/eqn.jpg" height=25 width=300></img><br>
+
+
+Where V=Rated service lines in volts,<br>
+I =rated breaking current (symmetrical or asymmetrical)
+in ampere.</li><br>
+<li><u>Making capacity:-</u><br>
+The peak value of current (including the DC component) during first cycle of current wave after the closure of circuit breaker is
+known as making capacity.<br>
+Making capacity = 2.55 × symmetrical breaking capacity</li><br>
+<li><u>Short-time capacity:-</u><br>
+The short time rating of a circuit breaker depends upon its ability to withstand the temperature rise and the electromagnetic
+force effects. The oil circuit breakers have a specified limit of 3 seconds when the ratio of symmetrical breaking current to the
+rated normal current does not exceed 40. However if this ratio exceeds 40, then the specified limit is 1second.
+</li>
+</ol>
+
+<p>
+<u>Normal current rating:-</u>
+It is the r.m.s value of current which the circuit breaker is
+capable of carrying continuously at its rated frequency under
+specified conditions.
+</p>
+
+</p>
+
+<br></div></div>
+                         
+
+
+</section>
+ <section id="experiment-article-section-2">
+                    
+
+<div class="icon" id="experiment-article-section-2-icon">
+                
+
+<img src="../images/procedure.jpg" style="padding-left: 20px;"></div>
+
+              
+   <div class="heading" id=
+"experiment-article-section-2-heading">
+   
+
+                     Procedure
+          
+          </div>
+
+           
+         <div class="content" id=
+"experiment-article-section-2-content">
+            
+            <div class="divContent"  id="wrap">
+                  
+        <p class="MsoNormal" style="line-height: 150%;">
+                      
+      <span lang="EN-IN" style=
+'font-size: 12pt; line-height: 150%; font-family: "Arial","sans-serif";'>
+
+
+ <p><font size="5"><u><b>Aim of the experiment :Circuit Breaker Status Indication from field input</b></u></font>
+<br><br>
+Yokogawa CS 1000 (DCS) is having Digital Input Module with 16 input ports. 
+These ports will get inputs from field devices such as circuit breakers and these 
+statuses of the circuit breaker will be displayed on Human-Machine Interface of 
+workstation. When the circuit breaker is ON corresponding Input ports of Digital 
+Input module will be shorted. When circuit breaker is OFF corresponding Input 
+parts of Digital Input module will be open.
+<br>
+<br>
+This process is simulated as below:<br>
+The Input from various Circuit breakers in the field is simulated using Array of 
+switches, connected to parts of DI module.
+<br>
+<ol type="1">
+<li>Close switch connected to Digital Input1 (DI1) indicates CB1 is closed,Green color is displayed for CB1.</li>
+<li>Open switch connected to Digital Input2 (DI2) indicates CB2 is open, Red color is displayed for CB2.</li>
+</ol>
+
+This process is followed for all circuit breakers in the field.
+
+</span></p>
+
+   </div></div>                 
+     
+</section>
+ 
+ <section id="experiment-article-section-3">
+    
+                <div class="icon" id="experiment-article-section-3-icon">
+
+                  
+                    <img src="../images/selfevaluation.jpg" style="padding-left:50px;"></div>
+    
+                
+
+                    <div class="heading" id= "experiment-article-section-3-heading">
+          
+             Self Evaluation
+            
+        </div>
+
+                    	
+	   <div class="content" id="experiment-article-section-3-content">
+                        <div class="divQuiz">
+                            <div id="displayQuiz">
+							<div id="slickQuiz">
+        <h1 class="quizName"><!-- where the quiz name goes --></h1>
+
+        <div class="quizArea">
+            <div class="quizHeader">
+                <!-- where the quiz main copy goes -->
+
+                <a style="margin-top: 40px;float: left;
+width: auto;
+padding: 5px 15px;
+color: #FFF;
+background-color: #008B8B;
+border: 1px solid #FFF;
+border-radius: 5px;
+text-decoration: none;" href="indexs.html">Get Started</a>
+            </div>
+
+            <!-- where the quiz gets built -->
+        </div>
+
+      
+</div>
+      
+                                <form id="form11" method="post" name="form11">
+
+                 </form><br>
+                            </div><br>
+                        </div>
+                    </div> 
+     </section>
+
+
+
+
+  <section id="experiment-article-section-4">
+           
+         <div class="icon" id="experiment-article-section-4-icon">
+              
+   
+                    <img src="../images/simulation.jpg" style="padding-left: 20px;"></div>
+
+   
+                 <div class="heading" id="experiment-article-section-4-heading">
+    
+                    Simulator
+          
+          </div>
+
+             
+       <div class="content" id="experiment-article-section-4-content">
+  
+                  
+      <div class="divContent">
+                      
+
+<p style="text-align: center;">
+	
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/
+shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="800" width="1300">
+<param name="quality" value="high" />
+<param name="allowScriptAccess" value="always" />
+<param name="allowFullScreen" value="true" />
+<param name="movie" value="../images/exp1.swf" />
+<embed allowfullscreen="true" allowscriptaccess="always" height="800" pluginspage="http://www.macromedia.com/go/
+getflashplayer" quality="high" src="../images/exp1.swf" type="application/x-shockwave-flash" width="1300">
+</embed>
+</object>
+</p></br>
+
+<p style="text-align: center;">
+<a href="../images/exp1.swf" target="_blank"></a></p>
+
+                           </div>
+
+
+</div>
+               
+ </section>
+
+      
+         <section id="experiment-article-section-5">
+    
+               <div class="icon" id="experiment-article-section-5-icon">
+   
+                                      <img src="../images/assignment.jpg" style="padding-left: 20px;"></div>
+    
+                                    <div class="heading" id= "experiment-article-section-5-heading">
+      
+                  Assignment
+         
+
+           </div>
+               
+     <div class="content" id="expostperiment-article-section-5-content">
+               
+			     <ul style="list-style-type:circle">
+  <li>What is a plain break oil circuit breaker and what is its major drawback?</li>
+  <li>Write a note on water type circuit breaker.</li>
+  <li>What are the different type of air blast circuit breaker and expalin them in brief.</li>
+<li>What are the methods of arc extensions? Explain them in brief.</li>
+<li>What is arc voltage?</li>
+<li>What is restriking voltage?</li>
+<li>What is recovery voltage?</li>
+<li>What is current chopping?</li>
+<li>What is resistance switching?</li>
+<li>Explain the construction and working of SF6 Circuit breaker.</li>
+<li>Types of SF6 Circuit breaker.</li>
+<li>Explain the construction and working of Vacuum Circuit breaker.</li>
+<li>Prepare a chart listing the pros and cons of the various types of communication protocols used for establishing communication between the field devices and Distributed Control Systems (DCS).</li>
+<li>For a given application, how will you decide the number of inputs and number of outputs to be programmed in DCS?</li>
+ </ul>  
+         
+                    </div>
+          
+      </section>
+	
+
+
+      
+         <section id="experiment-article-section-6">
+   
+                 <div class="icon" id="experiment-article-section-6-icon">
+                               
+      <img src="../images/reference.jpg" style="padding-left: 15px;"></div>
+
+  
+                  <div class="heading" id="experiment-article-section-6-heading">
+     
+                   Reference
+          
+          </div>
+
+             
+       <div class="content" id="experiment-article-section-6-content">
+   
+                 
+<ol type="1">
+<li>D. P. Kothari and I. J. Nagrath, “Modern Power System Analysis”, 4th ed., Tata McGraw Hill, New Delhi, 2011.</li>
+<li>B. M. Weedy and B. J. Cory, “Electric Power Systems”, 4th ed. , John Wiley & Sons Inc, 1998.</li>
+<li>A. J. Wood and B. F. Wollenberg, “Power Generation Operation and Control”, 2nd ed., John Wiley & Sons, Inc, 1996.</li>
+<li>C.L. Wadhwa,”Electrical Power Systems”, Newage International (P) Ltd., 2000.</li>
+<li>J. D. McDonald and L. L. Grigsby “Electrical Power Substation Engineering”, CRC Press LLC, 2003.</li>
+<li>James Northcote-Green, Robert Wilson, “Control and Automation of Electrical Power Distribution Systems”, CRC Press, 2006.</li>
+<li>James A. Momoh, “Electric Power Distribution, Automation, Protection, and Control”, CRC Press, 2007.</li>
+<li>Shoaib khan,"Industrial power systems",CRC Press, 2007.</li>
+<li>R.K. Rajput,"A textbook of power system engineering",Laxmi Publications Pvt Limited,2006.</li>
+</ol>
+	 
+                    </div>
+
+		</section>
+
+   
+       <section id="experiment-article-section-7">
+   
+                 <div class="icon" id="experiment-article-section-7-icon">
+ 
+       
+            <img src="../images/video.jpg"></div>
+
+    
+                <div class="heading" id="experiment-article-section-7-heading">
+  
+                      Video 
+         
+         </div>
+
+               
+     <div class="content" id="experiment-article-section-7-content">   
+
+<iframe width="800" height="600" src="https://www.youtube.com/embed/8MJbG5ReYd0?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+   
+         </div>
+
+               
+     <div class="content" id="experiment-article-section-7-content">
+        
+                
+                    </div>
+ 
+          </section>
+              
+
+             
+  
+     <section id="experiment-article-section-8">
+        
+            <div class="icon" id="experiment-article-section-8-icon">
+             
+                  
+      <img src="../images/quiz.jpg"></div>
+                   
+ 
+
+                    <div class="heading" id="experiment-article-section-8-heading">
+ 
+                       Quiz 
+           
+         </div>
+
+                  
+				  
+				   <div class="content" id="experiment-article-section-8-content">
+                        <div class="divQuiz">
+                            <div id="displayQuiz">
+							<div id="slickQuiz">
+        <h1 class="quizName"><!-- where the quiz name goes --></h1>
+
+        <div class="quizArea">
+            <div class="quizHeader">
+                <!-- where the quiz main copy goes -->
+
+                <a style="margin-top: 40px;float: left;
+width: auto;
+padding: 5px 15px;
+color: #FFF;
+background-color: #008B8B;
+border: 1px solid #FFF;
+border-radius: 5px;
+text-decoration: none;" href="index1.html">Get Started</a>
+            </div>
+
+            <!-- where the quiz gets built -->
+        </div>
+
+      
+</div>
+      
+
+                                <form id="form11" method="post" name="form11">
+       
+                                </form><br>
+                            </div><br>
+                        </div>
+                    </div> 
+  
+                </section>
+
+       
+     </div>
+     
+   </article>
+  
+  </div>
+
+</body>
+
+</html>
