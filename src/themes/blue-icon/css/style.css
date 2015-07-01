@@ -12,7 +12,7 @@ body
 	font-size:12px;
 	margin:0 auto;
 	padding:0;
-	background: #012943;	
+	background: #012943;
 }
 
 #container
@@ -212,9 +212,9 @@ nav#lab-article-navigation ul li a:focus, nav#experiment-article-navigation ul l
 }
 .content img
 {
-	width:600px;
-	height:400px;
-	padding-left:0px;
+	/*width:600px;
+	height:400px;*/
+	pding-left:0px;
 	padding-bottom:0px;
 }
 
