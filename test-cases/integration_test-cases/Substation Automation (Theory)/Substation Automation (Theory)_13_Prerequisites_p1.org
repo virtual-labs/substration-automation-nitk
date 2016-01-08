@@ -1,0 +1,33 @@
+* Author: Nihanth
+* Date Created: 08 Jan 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - User To view minimum requirement to run the experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/Substation Automation (Theory)/Substation Automation (Theory)_01_Usability_smk.org][Substation Automation (Theory)_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Open the url vlabs.ac.in and vlabs home page will be displayed 
+  2. Click on NIT-Karnataka and a list of labs will be displayed on the screen 
+  3. Select Substation Automation Lab, a home page will be displayed and click on list of experiments link,  where a list  will be displayed on the screen
+  4. Select  "Substation Automation (Theory)" experiment.
+
+* Expected result
+  1. Videos page should be opened
+  2. Content should be present with no distortions and Junk characters
+  3. The video  should be played
+  4. The video should be clear
+  5. When we click on the theory link, it shoeld redirect to the theory page and when we click on the videos page, the videos page should be opened and the video should get paused and when we click on the play button video should start playing from the begining
+
+* Review/comments
+
+

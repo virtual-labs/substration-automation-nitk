@@ -1,0 +1,30 @@
+* Author: Nihanth
+* Date Created: 08 Jan 2016
+* Environment
+  - OS: Windows 7, Linux
+  - Browsers: Firefox,Chrome
+  - Bandwidth : 100Mbps
+  - Hardware Configuration:8GBRAM , 
+  - Processor:i5
+
+* Objective
+  - To view the Simulation of the Control of Group Operated Switches (GOS) from workstation experiment
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/Control of Group Operated Switches (GOS) from workstation /Control of Group Operated Switches (GOS) from workstation _01_Usability_smk.org][Control of Group Operated Switches (GOS) from workstation _01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+  1. Click on the Simulation link 
+  2. It should re-direct to the Simulation page
+  3. Click on the OFF button of forced operation control for all the GOS
+
+* Expected result
+  1. Simulation page should be opened
+  2. Content should be present with no distortions and Junk characters
+  3. Once G.O.S is opened the color of display of G.O.S changes and also status in G.O.S status table is indicated as open and forced operation is indicated as close.
+
+* Review/comments
+
+

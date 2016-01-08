@@ -1,0 +1,9 @@
+S.no		Test case link
+1. 	[[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/system/Substation%20Automation%20l_01_Usability_smk.org][Substation Automation l_01_Usability_smk.org]]
+2. 	[[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/system/Substation%20Automation%20l_02_Landing%20page_smk.org][Substation Automation l_02_Landing page_smk.org]]
+3. 	[[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/system/Substation%20Automation%20l_03_Virtual%20lab_smk.org][Substation Automation l_03_Virtual lab_smk.org]]
+4. 	[[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/system/Substation%20Automation%20l_04_Video%20Tutorials_smk.org][Substation Automation l_04_Video Tutorials_smk.org]]
+5. 	[[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/system/Substation%20Automation%20l_05_Fourm_smk.org][Substation Automation l_05_Fourm_smk.org]]
+6. 	[[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/system/Substation%20Automation%20l_06_Downloads_smk.org][Substation Automation l_06_Downloads_smk.org]]
+7. 	[[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/system/Substation%20Automation%20l_07_Photo%20gallery_smk.org][Substation Automation l_07_Photo gallery_smk.org]]
+8. 	[[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/system/Substation%20Automation%20l_08_Contacts_smk.org][Substation Automation l_08_Contacts_smk.org]]

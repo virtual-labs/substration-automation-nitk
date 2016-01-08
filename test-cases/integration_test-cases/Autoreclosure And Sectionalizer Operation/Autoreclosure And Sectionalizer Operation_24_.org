@@ -1,0 +1,18 @@
+* Author: 
+* Date Created: 08 Jan 2016
+* Environment
+
+* Objective
+
+* Pre conditions
+  - Refer to first test case [[https://github.com/Virtual-Labs/substration-automation-nitk/blob/master/test-cases/integration_test-cases/Autoreclosure And Sectionalizer Operation/Autoreclosure And Sectionalizer Operation_01_Usability_smk.org][Autoreclosure And Sectionalizer Operation_01_Usability_smk.org]]
+
+* Post conditions
+  - Nil
+* Test Steps
+
+* Expected result
+
+* Review/comments
+
+
