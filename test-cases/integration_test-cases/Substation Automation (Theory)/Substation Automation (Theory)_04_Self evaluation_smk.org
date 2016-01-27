@@ -18,10 +18,12 @@
 * Test Steps
   1. Click on the Self Evaluation link 
   2. It should re-direct to the Self Evaluation page
+  3. Don't select the options and click on submit button
 
 * Expected result
   1. Self Evaluation page should be opened
   2. Content should be present with no distortions and Junk characters
+  3. An error message should be displayed on the screen as to select the options  
 
 * Review/comments
 
