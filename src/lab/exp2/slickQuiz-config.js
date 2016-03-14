@@ -39,7 +39,7 @@ var quizJSON = {
 				"incorrect": "<p><span>wrong</span> It's wrong,Ans:An isolator is an off load device intended to be opened only after current has been interrupted by some other control device</p>" // no comma here
         },
         { // Question 3 - Multiple Choice, Multiple True Answers, Select All
-            "q": "<br><img src=\"../images/exp2/q2.jpg\"\height=200 width=200/>Consider the above diagram, GOS1, GOS2 represents isolators and CB1, CB2 represents circuit breakers. So when the transformer is required to take out for maintenance, what is the procedure: - ",
+            "q": "<br><img src=\"../images/exp2/q2.gif\"\height=200 width=200/>Consider the above diagram, GOS1, GOS2 represents isolators and CB1, CB2 represents circuit breakers. So when the transformer is required to take out for maintenance, what is the procedure: - ",
             "a": [
                 { "option": "Circuit breaker is taken out first and isolators are taken out second", "correct": true },
                 { "option": "Isolators are taken out first and circuit breaker is taken out second", "correct": false },

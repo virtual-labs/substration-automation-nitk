@@ -26,7 +26,7 @@ var quizJSON = {
                 "incorrect": "<p><span>wrong</span> It's wrong,Ans:Both it has inbuilt breaker and it has more number of shot capability</p>" // no comma here
         },
         { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
-              "q": "From below figure, the speed ratio of 20K and 20T fuses are respectively<br><img src=\"../images/recquiz/1.jpg\"\height=300 width=400/>",
+              "q": "From below figure, the speed ratio of 20K and 20T fuses are respectively<br><img src=\"../images/recquiz/1.gif\"\height=300 width=400/>",
             "a": [
                 { "option": "7.55 and 14.56", "correct": false },
                 { "option": "14.56 and 7.55", "correct": true },
@@ -95,7 +95,7 @@ var quizJSON = {
                 "incorrect": "<p><span>wrong</span> It's wrong,Ans:0.3</p>"  // no comma here
         },
          { // Question 8 - Multiple Choice, Multiple True Answers, Select Any
-             "q": "Consider that the sectionaliser S2 is absent in the Figure 1 of demonstration/procedure. The probable count setting of the sectionaliser S3 would be <br><img src=\"../images/recquiz/2.jpg\"\height=275 width=400/> ",
+             "q": "Consider that the sectionaliser S2 is absent in the Figure 1 of demonstration/procedure. The probable count setting of the sectionaliser S3 would be <br><img src=\"../images/recquiz/2.gif\"\height=275 width=400/> ",
              "a": [
                 { "option": "1", "correct": false },
                 { "option": "2", "correct": true },
@@ -109,7 +109,7 @@ var quizJSON = {
          },
        
         { // Question 9
-            "q": "After the recloser is completely locked out the sectionaliser to which first closing command is given as per the network configuration of Figure 1 is<br><img src=\"../images/recquiz/2.jpg\"\height=275 width=400/>  ",
+            "q": "After the recloser is completely locked out the sectionaliser to which first closing command is given as per the network configuration of Figure 1 is<br><img src=\"../images/recquiz/2.gif\"\height=275 width=400/>  ",
             "a": [
                 { "option": "S1", "correct": false },
                 { "option": "S2", "correct": false },
