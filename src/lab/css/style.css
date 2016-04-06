@@ -363,6 +363,8 @@ aside
 	position: relative;
 	margin:0px auto auto auto;
 	width: 1000px;
+	display:inherit;
+	
 }
 
 #experiment-article-breadcrumb a:link, #experiment-article-breadcrumb a:visited
