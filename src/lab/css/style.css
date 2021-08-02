@@ -18,7 +18,7 @@ body
 #container
 {
 	margin:0 auto;
-	padding:0
+	padding:0;
 	width:100%;	
 }
 
@@ -232,6 +232,14 @@ nav#lab-article-navigation ul li a:focus, nav#experiment-article-navigation ul l
 {
 	width:800px;
 	padding-left:80px;
+	height:400px;
+	padding-bottom:10px;
+	border: solid 1px #b2bbc0;	
+}
+.content embedd
+{
+	width:800px;
+	padding-left:0px;
 	height:400px;
 	padding-bottom:10px;
 	border: solid 1px #b2bbc0;	
